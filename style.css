@@ -1,0 +1,229 @@
+/* ============================
+common css
+============================== */
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia;  
+    background-color: #000000; 
+    
+}
+.container{
+    max-width: 1000px;
+    width: 98%;
+    margin: 0 auto;
+
+}
+/* ============================
+nav-info part
+============================== */
+.nav-info{
+    display: flex;
+    justify-content: space-between;
+    background-color: #232323;
+    padding: 20px;
+    
+}
+.nav-text{
+    color: #676767;
+}
+.search-text input, .btn{
+    background-color:#3e3e3e ;
+    color: #c7ced6;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.btn:hover , .nav-item ul li:hover a{
+    color: #33d7ff;
+
+}
+.nav-item ul li:hover ul li a{
+    color: white;
+}
+.nav-item ul li ul li a:hover{
+    color: #33d7ff;
+    background-color:#676767 ;
+}
+/* ============================
+Logo part
+============================== */
+.logo img{
+    max-width: 435px;
+    width: 43%;
+}
+.logo{
+    
+    text-align: center;
+    padding: 18px;
+}
+/* ============================
+NavBar part
+============================== */
+.nav-item{
+    background-color: #232323;
+    padding: 10px;
+    border-top: 1px solid #3f3f3f;  
+    border-bottom: 1px solid #3f3f3f;  
+}
+.nav-item ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    position: relative;
+    
+}
+.nav-item ul a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav-item ul li ul{
+    display: none;
+    list-style: none;
+    position: absolute;
+    border: 1px solid #676767;
+    justify-content: center;
+    padding: 15px;
+    top: 20px;
+    right: 55%;
+    background-color:#232323 ;
+    line-height: 45px;  
+}
+.nav-item ul li:hover ul{
+
+display: flex;
+    flex-direction: column;
+}
+/* ============================
+Image carousel part
+============================== */
+.line{
+    border-top: 1px solid #676767;
+    border-bottom: 1px solid #676767;
+    padding-top:30px ;
+    padding-bottom:30px ;
+    margin-top:50px ;
+}
+.mySlides{
+    position: relative;
+    top: 30%;
+  left:50%;
+}
+.img-section{
+    position: relative;
+}
+.img-label{
+    position: absolute;
+    top: 30%;
+  right: 70%;
+    color: #c0c0c0;
+}
+.img-label h1{
+    color: #c2c2c2;
+}
+/* ============================
+Customer part
+============================== */
+.customer , .customer-text{
+    color: #989898;
+}
+.customer-text{
+    width: 250px;
+}
+.customer-text h1{
+    color: #535353;
+}
+.customer-text a{
+    text-decoration: none;
+    color: #989898;
+}
+.customer-text a:hover{
+    color:#33d7ff ;
+}
+.customer{
+    border: 1px solid #3f3f3f;
+    padding: 5px;
+    text-align: center;
+}
+.customer img{
+    height: 130px;
+    width: 235px;
+}
+.customer-items{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 20px;
+    margin-top: 50px;
+    padding-bottom: 55px;
+}
+/* ============================
+Footer part
+============================== */
+.hr-top{
+    background-color: #3f3f3f;
+    border: 3px solid #3f3f3f;
+    margin-bottom: 20px;
+}
+.hr-bottom{
+    background-color: #3f3f3f;
+    border: 1px solid #3f3f3f;
+    margin-top: 20px;
+}
+.main-footer{
+    
+    display: grid;
+    grid-template-columns: 3fr 3fr 6fr;
+    column-gap: 50px;
+    list-style: none;
+    
+}
+h4{
+    color: #585858;
+}
+.footer-same ul , a{
+    list-style: none;
+    text-decoration: none;
+    color: #979797;
+}
+.footer-same ul a:hover{
+    color:#33d7ff ;
+}
+.exceptional{
+    padding-top: 10px;
+}
+.footer-different{
+    text-align: center;
+    border-left: 1px solid #3f3f3f;
+}
+/* Icons start */
+.icons{
+    color: #3f3f3f;
+    font-size: 50px;
+    
+}
+.icons .fa-facebook:hover{
+color: #3b5998;
+background-color: white;
+border-radius: 50%;
+}
+.icons .fa-twitter:hover{
+color: #00aced;
+}
+.icons .fa-pinterest:hover{
+color: #cb2027;
+background-color: white;
+border-radius: 50%;
+}
+.icons .fa-google-plus:hover{
+color: #dd4b39;
+background-color: white;
+border-radius: 50%;
+}
+
+/* Footer Lite */
+.footer-lite{
+    color: #979797;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+}
